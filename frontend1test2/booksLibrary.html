@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Library System</title>
+        <link rel="stylesheet" href="./library.css">
+    </head>
+    <body>
+        <!--Objective
+Design and implement an interactive web page using HTML and CSS. The web page is a basic library system, 
+containing a navigation bar, a table of books, and a registration form.
+
+Design a Sticky Navigation Bar (30 marks)
+Use CSS to create a sticky navigation bar at the top of the webpage. The navigation bar should include two 
+links: "Books" and "Register". Make sure the navigation bar remains at the top of the page even when scrolling.
+On the click of books, take the user to the books section and on the click of register make sure to take the
+ user to the re==form section. (Hint: You can do this using ids and smooth scrolling
+Style the navigation bar to your liking. You can be creative with the colors, typography, and layout.
+
+Create a Table of Books (30 marks)
+Create a table displaying a list of books. Each row in the table should include the following columns: Book ID,
+ Title, Author, Genre, and Availability.
+Embed a nested table within each cell of the "Title" column. The nested table should include additional 
+information about the book like Publication Date, Page Count, and ISBN. The nested table should be visible 
+without any need for user interaction
+Populate the table with at least 5 rows of your own data. Be creative
+
+
+
+Overall Design and Creativity (15 marks)
+Your webpage should have a cohesive design. The choice of colors, typography, and layout should create a 
+visually appealing and user-friendly experience.
+
+Notes
+You have to use Google Fonts to enhance the typography of your webpage. Be sure to validate your form inputs. 
+For example, the Email field should contain a valid email address, and the Confirm Password field should match
+ the Password field.
+Your submission should include a github repository and a deployed link, the github repo must contain atleast 
+two files: an HTML file and a CSS file. You will be marked on both the functionality and design of your 
+webpage, so make sure to test your webpage thoroughly before submitting.-->
+       <nav class="navbar">
+        <img src="./images.png" alt="logo" height="80px" width="80px"> 
+        <a href="#topheading" > Books</a>
+        <a href="#registeration">Register</a>
+       </nav> 
+       <section id="topheading"><span h1><b>Welcome to the world of Books!</b></span></section>
+       <section id="intro1">
+           <h3 class="subheading">Your one stop destination to book and read free books.</h3>
+           <p>
+                Here you can read the listed books for free. We have wide ranges of books of diferent Genres. We invite our faculty and staff to:Utilize our collections for your scholarship, teaching and personal growth, collaborate with a librarian to incorporate library collections and services into curricular and co-curricular experiences for students. Work with a librarian to embed information literacy learning into your courses and assignments. To browse more books fill the <a href="#registeration">form</a>. 
+               <br><br>Here is the list of books which are currently available for free booking:
+            </p>
+       </section>
+        <table id="booktable" border="2" width="100%" cellspacing="0" cellpadding="3"  >
+           <thead>
+            <tr>
+                <b>
+                 <th>Book ID</th>
+                 <th>Title</th>
+                 <th>Author</th>
+                 <th>Genre</th>
+                 <th>Availability</th>
+                </b>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>0001</td>
+                <td class="titles">
+                    The God of Small Things 
+                    <table class="details" cellspacing="0" colspan="2">
+                        
+                        <tr>
+                            <td>Publication date:</td>
+                            <td> 15/03/ 1997</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Page:</td>
+                            <td>333</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>ISBN:</td>
+                            <td> 0-06-097749-3</td>
+                            
+                        </tr>
+                    </table>
+                </td>
+                <td>Arundhati Roy</td>
+                <td>Novel</td>
+                <td>Yes</td> 
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td class="titles"> 
+                    The Silent Patient
+                    <table class="details" cellspacing="0" colspan="2">
+                        <tr>
+                            <td>Publication date:</td>
+                            <td>5 February 2019</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Page:</td>
+                            <td> 323</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>ISBN:</td>
+                            <td> 9781250301697</td>
+                            
+                        </tr>
+                    </table>
+                </td>
+                <td>Alex Michaelides</td>
+                <td>Mystery</td>
+                <td>Yes</td>
+            </tr>
+            <tr>                
+                <td>0003</td>
+                <td class="titles">
+                    Sapiens: A Brief History of Humankind
+                    <table class="details" cellspacing="0" colspan="2">
+                        
+                        <tr>
+                            <td>Publication date:</td>
+                            <td>2011</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Page:</td>
+                            <td> 443</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>ISBN:</td>
+                            <td> 978-0062316097</td>
+                            
+                        </tr>
+                    </table>
+                </td>
+                <td>Yuval Noah Harari</td>
+                <td>History</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>0004</td>
+                <td class="titles"> 
+                   A Brief History of Time
+                    <table class="details" cellspacing="0" colspan="2">
+                        <tr>
+                            <td>Publication date:</td>
+                            <td> 1988</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Page:</td>
+                            <td> 256</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>ISBN:</td>
+                            <td> 978-0-553-10953-5</td>
+                            
+                        </tr>
+                    </table>
+                </td>
+                <td>Stephen Hawking</td>
+                <td>Science(Cosmology)</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>0005</td>
+                <td class="titles"> 
+                    Charlotte's Web
+                    <table class="details" cellspacing="0" colspan="2">
+                      
+                        <tr>
+                            <td>Publication date:</td>
+                            <td>October 15, 1952</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Page:</td>
+                            <td> 192</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>ISBN:</td>
+                            <td> 9780062658753</td>
+                            
+                        </tr>
+                    </table>
+                </td>
+                <td>E. B. White</td>
+                <td>Children Literature</td>
+                <td>Yes</td>
+            </tr>
+           </tbody>
+       </table>
+       <!-- Design a Registration Form (25 marks)
+Create a registration form with the following input fields: First Name, Last Name, Email, Date of Birth, Age,
+ Password, Confirm Password. Each field should be correctly labeled.
+Make sure that Age has a minimum value of 5 and a maximum value of 100. Age input should be of the type of 
+number.
+Make sure all the values in the form are required.
+Styling of the form can be as your liking as well. The form should look -->
+        <section class="formheading">
+            <span >
+               <b >New here? Fill the form to register.</b>
+            </span>
+        </section>
+       <form id="registeration" action>
+        <div>
+            <label for="first name">First Name:</label>
+            <input type="text" placeholder="eg. Anuj" required>
+        </div>
+        <br>
+        <div>
+            <label for="last name">Last Name:</label>
+            <input type="text" placeholder="eg. Bhosle" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="xyz@mail.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="date">Date of Birth:</label>
+            <input type="date" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" min="5" max="100" required>
+        </div>
+        <br>
+        <div>
+            <label for="password" id="pw1">Create a password:</label>
+            <input type="password" minlength="8" placeholder="atleast 8 length" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Confirm password:</label>
+            <input type="password" minlength="8" placeholder="atleast 8 length" >
+        </div>
+        <br>
+        <div>
+            <button type="submit">Confirm</button>
+            <button type="reset">Reset</button>
+        </div>
+       </form>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+
+    position: sticky;
+    display: block;
+    padding: 8px;
+    background-image:url(navbooks.jpg)  ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-color: aquamarine; */
+    height: 80px;
+    top: 0px;
+    left: 0px;
+}
+
+#topheading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    border-spacing: 0px;
+    background-color: cornflowerblue;
+}
+nav > a{
+    left:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:60px;
+    align-content: center;
+    offset-distance: 30px;
+    width:fit-content;
+    position:relative;
+    color: rgb(243, 56, 56);
+    bottom:11px;
+    padding: 2px 30px 0px 30px;
+    text-decoration: none;
+}
+  
+nav > a:hover {
+    background-color: rgb(195, 143, 219);
+    border-radius: 20px;
+}
+#booktable{
+    
+            
+           
+    background-color:ghostwhite;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+thead{
+    background-color:rgb(102, 12, 27);
+    color: antiquewhite;
+    text-align: center;
+}
+.titles{
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#intro1{
+    padding: 2%;
+    color: rgb(175, 240, 156);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: radial-gradient(rgb(4, 29, 61),black);
+}
+.details{
+    color:rgb(5, 64, 66);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size: smaller;
+}
+
+
+.formheading{
+    background-color: greenyellow;
+    border-spacing: 0;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight:400;
+}
+#registeration{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(5, 33, 58);
+    text-align: center;
+}
+label{
+    font-weight:100;
+    color: blanchedalmond;
+}
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+input:focus{
+    
+    background-color: rgb(236, 114, 210);
+    outline: none;
+    border: 4px black;
+    border-radius: 10px;
+}
+button{
+
+    background-color: rgb(116, 255, 116);
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 32px;
+    font-weight: 800;
+}
+
