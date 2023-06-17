@@ -1,0 +1,263 @@
+
+@import url('./variables.css');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 86px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    z-index: 1000;
+   background-color: var(--color-white);
+}
+
+.logo, .location, .search-bar, .login, .cart{
+    
+    
+    padding: 0 40px;
+    
+    
+}
+/* .logo svg{
+
+    width: 80%;
+    height: 20px;
+} */
+.location{
+    padding:0 40px;
+    margin-top:15px;
+}
+.location .location-time{
+    font-weight: var(--fw-700);
+    font-size: 18px;
+    margin-top: 10px;
+    /* letter-spacing: 0.5px; */
+}
+.location .placedown{
+    display: flex;
+    padding: 0 0 10px ;
+    margin-bottom : 10 px;
+}
+.placedown .place{
+    
+    
+    font-size: 13px;
+    font-weight: var(--fw-400);
+    margin-bottom: 20px;
+}
+
+.down .fa-sort-down{
+    transform: translateY(-6px);
+    padding-left:10px;
+   
+}
+.search-bar input{
+    border:0;
+    outline:0;
+    background-color: transparent;
+    font-weight:100;
+    width:100%;
+    font-size:14px;
+    
+}
+.search-bar{
+    margin:2px;
+    gap: 10px;
+    align-items:center;
+    display: flex;
+    height: 50%;
+    width: 40%;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+    padding: 10px;
+    font-weight: var(-fw-400);
+}
+.search-bar .fa-magnifying-glass{
+    color:var(--color-black);
+    width: 18px;
+    
+}
+.search-bar .search-input{
+    width:100%;
+}
+.login{
+    
+    color: var(--color-grey);
+    font-size: 18px;
+}
+.cart button{
+    padding: 13px;
+    height:40px;
+   width:100px; 
+   border-radius: 5px;
+    background-color: var(--color-green);
+    display:flex;
+    padding:6px;
+    color:var(--color-white);
+    border: none;
+}
+.button .fa-cart-shopping{
+    padding-top: 9px ;
+    padding-left: 5px;
+}
+.button p{
+    font-size:14px;
+    padding-top: 5px ;
+    padding-left: 4px;
+    font-weight: var(--fw-500) ;
+}
+/* main section */
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    top:90px;
+}
+.main-container{
+    max-width:1100px;
+}
+.banner img{
+    width:100%;
+}
+.banner2{
+display:flex;
+overflow: auto scroll;
+gap:20px;
+margin:0 14px;
+
+}
+.banner2 .banner-img img{
+height:165px;
+width:285px;
+
+}
+.banner2::-webkit-scrollbar{
+    display: none;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns: repeat(10,10%);
+}
+
+.section-3-img img{
+    width:100%;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    margin:14px;
+    row-gap:20px;
+
+}
+
+.items .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .category-name{
+    font-weight: var(--fw-700);
+}
+
+.title a{
+    color: var(--color-green);
+    text-decoration: none;
+}
+
+
+.list-items{
+    display: flex;
+    column-gap:12px;
+    overflow: auto scroll;
+
+}
+
+.list-items::-webkit-scrollbar{
+    display: none;
+}
+.list-items .item{
+    
+    width:200px;
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow:rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius:8px;
+    padding:5px;
+    margin-bottom: 20px;
+}
+.item .item-img img{
+    width: 140px;
+    height:140px;
+}
+.item-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.item-details .timer{
+    font-size: 8px;
+    font-weight: bolder;
+    background-color: var(--color-grey2);
+    padding:3px;
+    width:36%;
+}
+.item-details .item-name{
+    font-size:12px;
+    font-weight:800;
+}
+.item-details .item-weight{
+    font-size:10px;
+    color: var(--color-grey);
+}
+.item-price{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+.item-price price{
+    font-size: 10px;
+    font-weight: var(--fw-800);
+    font-family: sans-serif;
+}
+
+.item-price button{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: var(--fw-800);
+    padding:3px 9px;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius:3px;
+    background-color: var(--color-lightest-green);
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    top:85px;
+    padding:20px;
+    position: relative;
+    background-color:var(--color-grey2) ;
+
+}
+
+.fa-heart{
+    color:red;
+    margin:0px 4px;
+    padding-top: 5px;
+}

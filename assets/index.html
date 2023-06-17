@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* .block1{
+                height:150px;
+                width:150px;
+                background-color: red;
+                position:fixed;
+                top:10%;
+            }
+            .block2{
+                height:150px;
+                width:150px;
+                background-color: blue;
+                position:fixed;
+                top:15%;
+                left:5%;
+            }
+            button:hover{
+                z-index: 1000;
+            } */
+            
+           
+           
+            img{
+                height:auto;
+                width:100%;
+            }
+            @media screen and (min-width:768px) {
+                .row{
+                    display:grid;
+                    grid-template-columns: auto auto auto ;
+                    gap:10px;
+                }
+            }
+            @media screen and (max-width:599px) {
+                .row{
+                   display: none;
+                   
+                }
+                .container{
+                    display:none;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- <div class="block1">
+
+        </div>
+        <div class="block2">
+
+        </div>
+        <button >
+            toggle
+        </button> -->
+        <div class="container">
+            <div class="row" >
+              <div class="column" >
+                <img src="https://wallpaperaccess.com/full/221471.jpg" >
+              </div>
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+              <div class="column">
+                <img src="https://wallpaperaccess.com/full/221471.jpg" />
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
