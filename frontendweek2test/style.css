@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+#bar{
+    display:flex;
+    justify-content: center;
+}
+#bar > div{
+    padding-left:5px;
+    padding-right:5px;
+    margin:5px 5px 5px 5px;
+    
+}
+table {
+    border-collapse: collapse;
+    width:90%;
+  }
+tr{
+    border: 1px solid black;
+    padding: 8px;
+    
+}
+td{
+    width: max-content;
+}
+img{
+    height:30px;
+}
+#searchInput{
+    font-size: large;
+    width: 400px;
+    padding-left:4px;
+}
+button{
+    background-color:rgba(red, rgb(29, 228, 29), rgb(45, 45, 88), alpha);
+    width:200px;
+    font-size: large;
+    border-radius: 10px;
+}

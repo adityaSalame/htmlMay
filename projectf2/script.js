@@ -105,3 +105,27 @@ let arr = [
     
     console.log(arr);
   }
+  let n=10, l=0, r=100,ans=n;
+  const inc=()=> n++;
+  const incp= num => num++;
+  const num1=inc();
+  const num2=incp(num1);
+  function t(a,b,c){
+    console.log(a+b+c);
+  }
+  t(2,3,4,5);
+//  function a(){
+//     console.log('a');
+//     function b(){
+//         console.log('b');
+//     }
+//  }
+//  a();
+let fruits = ["Banana", "Orange", "Apple", "Mango","cv"];
+let word=fruits.slice(2,1);
+// let a=fruits.forEach(match);
+// function match(word){
+console.log(word);
+// if(word==="Orange"){
+// fruits.shift();
+// }
