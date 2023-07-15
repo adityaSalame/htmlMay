@@ -165,12 +165,10 @@ async function fetchData() {
             }
 
         }
+
     }
 
-
-    
-
-    
+ 
    
    
    
