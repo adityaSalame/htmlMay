@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    background-color:rgb(24, 23, 23);
+    background-color:black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -10,25 +10,43 @@
     color:white;
     
 }
+#sidelogo{
+    width:90%;
+}
 #sidebar{
     width: 25%;
     margin: 0px;
+    background-color: rgb(12, 14, 16);
 }
-#sidebar h1, #sidebar h2{
+#sidebar h2, #sidebar h3{
     text-align: center;
+    background-color: rgb(12, 14, 16);
 }
+li{
+    background-color: rgb(12, 14, 16);
+}
+#section1{
+    padding:1%;
+    background-color: rgb(12, 14, 16);
+}
+
 #section2, #section3{
     margin: 4%;
     padding-left: 5%;
+    background-color:rgb(12, 14, 16);
 }
 
 a{
     text-decoration: none;
     color: aliceblue;
+    
 }
+
 #bannerimg{
-    width:99%;
-    object-fit: contain;
+    width:97%;
+    
+    height:90%;
+    padding:2%;
 }
 #nav{
     display: flex;
@@ -40,9 +58,35 @@ a{
 }
 
 div #nav-menu{
-    width: 70%;
+    width: 78%;
+    padding:2%;
 }
 
+.search-bar input{
+    border:0;
+    outline:0;
+    background-color: transparent;
+    font-weight:100;
+    width:100%;
+    font-size:14px;
+    color: rgb(130, 130, 130);
+    
+}
+.search-bar{
+    margin:2px;
+    gap: 10px;
+    align-items:center;
+    display: flex;
+    height: 50%;
+    width: 40%;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+    padding: 10px;
+    
+}
 button{
     background-color: rgb(248, 45, 45);
     width:100px;
@@ -52,8 +96,12 @@ button{
 #container #nav-menu #menuitem{
     display: flex;
     margin: 0;
+    overflow: auto;
 }
 
+#menuitem::-webkit-scrollbar{
+    display: none;
+}
  .card{
     width:300px; 
     height:250px;
